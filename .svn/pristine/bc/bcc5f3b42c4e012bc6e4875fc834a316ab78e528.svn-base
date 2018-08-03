@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BF853467-5C68-4A81-AE9B-9FCB45825C27}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>FairyLand_Common</RootNamespace>
+    <ProjectName>FairyLandCommon</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Props\FairyLandProp_d.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)lib\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>FairyLandCommon.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>zlibstat.lib;vtuneapi.lib;pcre.lib;_mmx_mem.obj</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCMT</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Address.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Allocater.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Array.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\AsyncManager.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\AxisAlignedBox.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\BinarySearch.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\BinFile.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Box.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\CallStack.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Camera.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\CfgFile.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Clipboard.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Color.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\CompletionPort.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Compression.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Console.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\DataOwner.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\DataType.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Diagnose.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Dictionary.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Encryption.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\EulerAngles.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Exception.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Expression.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\File.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\FileFinder.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\FileMapping.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\FileSystem.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\FixedAllocater.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\FixedTree.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Frustum.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Global.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Hash.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Heap.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\HyperTextParser.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\IFairyLandWorker.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\IniFile.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Interlocked.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Intersection.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\KernelObject.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Language.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Library.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Link.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\List.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Lock.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\MainWindow.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Math.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Matrix2.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Matrix3.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Matrix3SSE.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Matrix3x4.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Matrix4.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Matrix4Adjustor.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Matrix4SSE.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\MemFile.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Memory.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Model.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\ModelHelper.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\ModelLoader.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\ModelSaver.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Monitor.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\MonitorWindow.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Pair.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Pipe.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Plane.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Point.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Pool.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Quadruple.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Quaternion.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\QueryTable.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Queue.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\QuickSort.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\RawArray.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\RawString.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Ray.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Rect.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\ReferencedObject.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Region.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Registry.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\RegularExpression.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Script.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Singleton.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Sphere.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\SSEHelper.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Stack.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\String.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\StringFormatter.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\StringHash.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\StringPtr.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\SyncObject.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\System.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Thread.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Time.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\TinyVariable.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Tree.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Triangle.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Triple.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\TxtFile.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\TxtParser.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\TypeChecker.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Typedef.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Variable.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Vector2.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Vector3.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Vector3SSE.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Vector4.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Vector4SSE.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\Viewport.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\ViewWindow.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\FairyLandCommon.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Common\FairyLandWin32Worker.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Code\Engine\src\Common\Allocater.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\AsyncManager.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\AxisAlignedBox.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\BinFile.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Box.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\CallStack.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Camera.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\CfgFile.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Clipboard.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Color.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\CompletionPort.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Compression.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Console.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\DataType.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Diagnose.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Directory.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Encryption.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\EulerAngles.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Exception.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Expression.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\File.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\FileFinder.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\FileMapping.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\FileSystem.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Frustum.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Global.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\HyperTextParser.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\FairyLandWin32Worker.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\IFairyLandWorker.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\IniFile.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Interlocked.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Intersection.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\KernelObject.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Language.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Library.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Lock.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\MainWindow.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Math.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Matrix2.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Matrix3.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Matrix3SSE.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Matrix3x4.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Matrix4.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Matrix4Adjustor.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Matrix4SSE.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\MemFile.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Memory.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Model.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\ModelHelper.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\ModelLoader.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\ModelSaver.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Monitor.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\MonitorWindow.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Pipe.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Plane.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Point.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Quaternion.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\QueryTable.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Ray.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Rect.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Region.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Registry.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\RegularExpression.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Script.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Sphere.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\String.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\StringFormatter.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\StringPtr.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\SyncObject.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\System.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Thread.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Time.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\TinyVariable.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Triangle.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\TxtFile.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\TxtParser.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Variable.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Vector2.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Vector3.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Vector3SSE.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Vector4.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Vector4SSE.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\Viewport.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\ViewWindow.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\FairyLandCommon.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

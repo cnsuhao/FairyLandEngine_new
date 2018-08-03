@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Code\Engine\inc\FairyLandStorage.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Storage\AsyncIOManager.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Storage\FileArchive.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Storage\FileStream.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Storage\HashArchive.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Storage\HashStream.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Storage\MemArchive.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Storage\MemStream.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Storage\PackArchive.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Storage\PackStream.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Storage\PEResArchive.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Storage\PEResStream.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Storage\ResourceCache.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Storage\ResourceDownloader.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Storage\ResourceManager.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Storage\ResourceReplacer.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Storage\IDataArchive.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Storage\IDataStream.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Storage\IFileDownloader.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Storage\IResourceCache.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Storage\IResourceDownloader.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Storage\IResourceManager.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Storage\IResourceReplacer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Code\Engine\src\FairyLandStorage.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Storage\AsyncIOManager.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Storage\FileArchive.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Storage\FileStream.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Storage\HashArchive.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Storage\HashStream.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Storage\MemArchive.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Storage\MemStream.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Storage\PackArchive.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Storage\PackStream.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Storage\PEResArchive.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Storage\PEResStream.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Storage\ResourceCache.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Storage\ResourceDownloader.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Storage\ResourceManager.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Storage\ResourceReplacer.cpp" />
+  </ItemGroup>
+</Project>

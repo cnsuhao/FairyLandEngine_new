@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AAC77C46-F53F-4C9C-A66E-1906968407AC}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>FairyLandNetwork</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Props\FairyLandProp_d.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)lib\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Code\Engine\inc\FairyLandNetwork.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Network\INetworkManager.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Network\INetworkSession.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Network\INetworkStatistics.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Network\ITCPSocket.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Network\IUDPSocket.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Network\AsyncNetworkManager.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Network\BufferManager.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Network\Connection.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Network\HTTPDownloader.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Network\HTTPSession.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Network\NetworkAgentHelper.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Network\NetworkHelper.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Network\NetworkManager.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Network\NetworkNATHelper.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Network\NetworkProtocol.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Network\NetworkSession.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Network\NetworkStatistics.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Network\Socket.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Network\TCPConnection.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Network\TCPSocket.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Network\TCPSocketWrapper.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Network\UDPConnection.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Network\UDPSocket.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Network\UDPSocketWrapper.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Code\Engine\src\FairyLandNetwork.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Network\AsyncNetworkManager.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Network\BufferManager.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Network\Connection.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Network\HTTPDownloader.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Network\HTTPSession.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Network\NetworkAgentHelper.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Network\NetworkHelper.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Network\NetworkManager.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Network\NetworkNATHelper.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Network\NetworkSession.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Network\NetworkStatistics.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Network\Socket.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Network\TCPConnection.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Network\TCPSocket.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Network\TCPSocketWrapper.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Network\UDPConnection.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Network\UDPSocket.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Network\UDPSocketWrapper.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

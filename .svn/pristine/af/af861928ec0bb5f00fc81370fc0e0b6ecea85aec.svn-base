@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FairyLandCommon", "Projects\FairyLand_Common\FairyLand_Common.vcxproj", "{BF853467-5C68-4A81-AE9B-9FCB45825C27}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PubFile", "PubFile", "{26F14D71-C62D-4376-9BF0-BB9FA76287D4}"
+	ProjectSection(SolutionItems) = preProject
+		Code\Engine\inc\FairyLand.cpp = Code\Engine\inc\FairyLand.cpp
+		Code\Engine\inc\FairyLand.h = Code\Engine\inc\FairyLand.h
+		Code\Engine\inc\FairyLandConfig.h = Code\Engine\inc\FairyLandConfig.h
+		Code\Engine\inc\FairyLandDll.h = Code\Engine\inc\FairyLandDll.h
+		Code\Engine\inc\FairyLandGlobal.h = Code\Engine\inc\FairyLandGlobal.h
+		Code\Engine\inc\FairyLandGlobalInline.h = Code\Engine\inc\FairyLandGlobalInline.h
+		Code\Engine\inc\FairyLandLib.h = Code\Engine\inc\FairyLandLib.h
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FairyLandDataBase", "Projects\FairyLand_DataBase\FairyLand_DataBase.vcxproj", "{30BCCAB4-B22C-4659-9E63-42349537B496}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FairyLandGraphics", "Projects\FairyLand_Graphics\FairyLand_Graphics.vcxproj", "{8AA64198-4CE7-4DBA-AF86-800214D5FE4D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FairyLandNetwork", "Projects\FairyLandNetwork\FairyLandNetwork.vcxproj", "{AAC77C46-F53F-4C9C-A66E-1906968407AC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FairyLandSound", "Projects\FairyLandSound\FairyLandSound.vcxproj", "{2423BD29-85CD-4D8E-AA80-4F6AD248078A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FairyLandStorage", "Projects\FairyLandStorage\FairyLandStorage.vcxproj", "{8FF132C7-3AB4-4800-8425-82D79B0C152A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EngineLib", "EngineLib", "{F317AFAE-E782-4176-BE0C-1729789BFA9F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample", "Sample", "{7908F150-52DD-4991-B9CF-5D0B08FB17C5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FLSRender", "Sample\FLSRender\FLSRender.vcxproj", "{2F5461AD-4E2F-4BBE-8C41-C7EA2B882470}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF853467-5C68-4A81-AE9B-9FCB45825C27}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BF853467-5C68-4A81-AE9B-9FCB45825C27}.Debug|Win32.Build.0 = Debug|Win32
+		{BF853467-5C68-4A81-AE9B-9FCB45825C27}.Release|Win32.ActiveCfg = Release|Win32
+		{BF853467-5C68-4A81-AE9B-9FCB45825C27}.Release|Win32.Build.0 = Release|Win32
+		{30BCCAB4-B22C-4659-9E63-42349537B496}.Debug|Win32.ActiveCfg = Debug|Win32
+		{30BCCAB4-B22C-4659-9E63-42349537B496}.Debug|Win32.Build.0 = Debug|Win32
+		{30BCCAB4-B22C-4659-9E63-42349537B496}.Release|Win32.ActiveCfg = Release|Win32
+		{30BCCAB4-B22C-4659-9E63-42349537B496}.Release|Win32.Build.0 = Release|Win32
+		{8AA64198-4CE7-4DBA-AF86-800214D5FE4D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8AA64198-4CE7-4DBA-AF86-800214D5FE4D}.Debug|Win32.Build.0 = Debug|Win32
+		{8AA64198-4CE7-4DBA-AF86-800214D5FE4D}.Release|Win32.ActiveCfg = Release|Win32
+		{8AA64198-4CE7-4DBA-AF86-800214D5FE4D}.Release|Win32.Build.0 = Release|Win32
+		{AAC77C46-F53F-4C9C-A66E-1906968407AC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AAC77C46-F53F-4C9C-A66E-1906968407AC}.Debug|Win32.Build.0 = Debug|Win32
+		{AAC77C46-F53F-4C9C-A66E-1906968407AC}.Release|Win32.ActiveCfg = Release|Win32
+		{AAC77C46-F53F-4C9C-A66E-1906968407AC}.Release|Win32.Build.0 = Release|Win32
+		{2423BD29-85CD-4D8E-AA80-4F6AD248078A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2423BD29-85CD-4D8E-AA80-4F6AD248078A}.Debug|Win32.Build.0 = Debug|Win32
+		{2423BD29-85CD-4D8E-AA80-4F6AD248078A}.Release|Win32.ActiveCfg = Release|Win32
+		{2423BD29-85CD-4D8E-AA80-4F6AD248078A}.Release|Win32.Build.0 = Release|Win32
+		{8FF132C7-3AB4-4800-8425-82D79B0C152A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8FF132C7-3AB4-4800-8425-82D79B0C152A}.Debug|Win32.Build.0 = Debug|Win32
+		{8FF132C7-3AB4-4800-8425-82D79B0C152A}.Release|Win32.ActiveCfg = Release|Win32
+		{8FF132C7-3AB4-4800-8425-82D79B0C152A}.Release|Win32.Build.0 = Release|Win32
+		{2F5461AD-4E2F-4BBE-8C41-C7EA2B882470}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2F5461AD-4E2F-4BBE-8C41-C7EA2B882470}.Debug|Win32.Build.0 = Debug|Win32
+		{2F5461AD-4E2F-4BBE-8C41-C7EA2B882470}.Release|Win32.ActiveCfg = Release|Win32
+		{2F5461AD-4E2F-4BBE-8C41-C7EA2B882470}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BF853467-5C68-4A81-AE9B-9FCB45825C27} = {F317AFAE-E782-4176-BE0C-1729789BFA9F}
+		{8FF132C7-3AB4-4800-8425-82D79B0C152A} = {F317AFAE-E782-4176-BE0C-1729789BFA9F}
+		{30BCCAB4-B22C-4659-9E63-42349537B496} = {F317AFAE-E782-4176-BE0C-1729789BFA9F}
+		{8AA64198-4CE7-4DBA-AF86-800214D5FE4D} = {F317AFAE-E782-4176-BE0C-1729789BFA9F}
+		{AAC77C46-F53F-4C9C-A66E-1906968407AC} = {F317AFAE-E782-4176-BE0C-1729789BFA9F}
+		{2423BD29-85CD-4D8E-AA80-4F6AD248078A} = {F317AFAE-E782-4176-BE0C-1729789BFA9F}
+		{2F5461AD-4E2F-4BBE-8C41-C7EA2B882470} = {7908F150-52DD-4991-B9CF-5D0B08FB17C5}
+	EndGlobalSection
+EndGlobal

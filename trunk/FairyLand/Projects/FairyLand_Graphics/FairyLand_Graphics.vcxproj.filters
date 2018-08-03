@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Code\Engine\inc\Graphics\IAnimation.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Graphics\IFontTexture.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Graphics\IGeometryFactory.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Graphics\IGraphicsManager.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Graphics\IIndexBuffer.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Graphics\IMesh.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Graphics\IMeshAnimation.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Graphics\IModelFactory.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Graphics\IParticleFactory.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Graphics\IParticlePlayer.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Graphics\IParticleSystem.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Graphics\IPhysicsFactory.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Graphics\IRenderable.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Graphics\IRenderConfig.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Graphics\IRenderDevice.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Graphics\IRenderMethod.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Graphics\IRenderScene.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Graphics\IRenderSet.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Graphics\IRenderStatistics.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Graphics\ISamplerMethod.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Graphics\ISceneFactory.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Graphics\IShaderConst.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Graphics\ISkeleton.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Graphics\ISkeletonAnimation.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Graphics\ISurface.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Graphics\ITagPoint.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Graphics\ITechniqueFactory.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Graphics\ITexture.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Graphics\ITextureFactory.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Graphics\ITextureMethod.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Graphics\IVertexAnimation.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Graphics\IVertexBuffer.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Graphics\IVertexDeclaration.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\Animation.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\DefaultShader.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\DeviceToken.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\FontTexture.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\FrustumScene.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\GeometryData.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\GeometryFactory.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\GraphicsManager.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\IndexBuffer.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\Mesh.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\MeshAnimation.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\ModelFactory.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\OverlayClipper.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\Particle.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\ParticleBlocker.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\ParticleEmitter.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\ParticleFactory.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\ParticleGravity.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\ParticlePlayer.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\ParticleSystem.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\ParticleUpdater.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\PhysicsFactory.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\RenderAPI.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\RenderAPID3D9.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\RenderAPIOpenGL.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\RenderConfig.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\RenderDevice.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\RenderLayer.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\RenderMethod.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\RenderQueue.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\RenderScene.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\RenderSet.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\RenderStatistics.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\RenderToken.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\RenderUnit.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\SamplerMethod.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\SceneFactory.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\ShaderConst.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\Skeleton.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\SkeletonAnimation.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\Surface.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\SurfaceProcessor.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\TagPoint.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\TechniqueFactory.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\TechniqueUnit.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\Texture.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\TextureFactory.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\TextureMethod.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\VertexAnimation.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\VertexBuffer.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\VertexDeclaration.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Graphics\VertexElement.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\FairyLandGraphics.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\Animation.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\DefaultShader.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\DeviceToken.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\FontTexture.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\FrustumScene.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\GeometryData.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\GeometryFactory.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\GraphicsManager.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\IndexBuffer.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\Mesh.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\MeshAnimation.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\ModelFactory.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\OverlayClipper.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\ParticleBlocker.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\ParticleEmitter.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\ParticleFactory.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\ParticleGravity.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\ParticlePlayer.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\ParticleSystem.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\ParticleUpdater.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\PhysicsFactory.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\RenderAPI.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\RenderAPID3D9.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\RenderAPIOpenGL.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\RenderConfig.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\RenderDevice.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\RenderLayer.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\RenderMethod.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\RenderQueue.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\RenderScene.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\RenderSet.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\RenderStatistics.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\RenderToken.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\SamplerMethod.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\SceneFactory.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\ShaderConst.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\Skeleton.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\SkeletonAnimation.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\Surface.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\SurfaceProcessor.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\TagPoint.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\TechniqueFactory.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\TechniqueUnit.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\Texture.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\TextureFactory.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\TextureMethod.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\VertexAnimation.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\VertexBuffer.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Graphics\VertexDeclaration.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\FairyLandGraphics.cpp" />
+  </ItemGroup>
+</Project>

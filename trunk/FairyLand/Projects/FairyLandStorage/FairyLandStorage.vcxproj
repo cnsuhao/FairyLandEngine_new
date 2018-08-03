@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8FF132C7-3AB4-4800-8425-82D79B0C152A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>FairyLandStorage</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Props\FairyLandProp_d.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)lib\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Code\Engine\inc\FairyLandStorage.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Storage\IDataArchive.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Storage\IDataStream.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Storage\IFileDownloader.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Storage\IResourceCache.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Storage\IResourceDownloader.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Storage\IResourceManager.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Storage\IResourceReplacer.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Storage\AsyncIOManager.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Storage\FileArchive.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Storage\FileStream.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Storage\HashArchive.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Storage\HashStream.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Storage\MemArchive.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Storage\MemStream.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Storage\PackArchive.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Storage\PackStream.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Storage\PEResArchive.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Storage\PEResStream.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Storage\ResourceCache.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Storage\ResourceDownloader.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Storage\ResourceManager.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Storage\ResourceReplacer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Code\Engine\src\FairyLandStorage.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Storage\AsyncIOManager.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Storage\FileArchive.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Storage\FileStream.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Storage\HashArchive.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Storage\HashStream.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Storage\MemArchive.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Storage\MemStream.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Storage\PackArchive.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Storage\PackStream.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Storage\PEResArchive.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Storage\PEResStream.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Storage\ResourceCache.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Storage\ResourceDownloader.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Storage\ResourceManager.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Storage\ResourceReplacer.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
